@@ -1,5 +1,6 @@
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import CloseIcon from '@mui/icons-material/Close';
 
 export const Lose = () => {
 
@@ -7,6 +8,12 @@ export const Lose = () => {
 
     return (
         <>
+            <Button
+             startIcon={<CloseIcon/>}
+             onClick={() => nav("/")}
+             >
+                 Exit
+            </Button>
             <h2>
                 Better luck next time 😢
             </h2>
@@ -19,14 +26,14 @@ export const Lose = () => {
                 </Button>
             </p>
 
-            <p>
+            {/* <p>
                 <Button
                     variant="outlined"
                     onClick={() => nav("/")}
                 >
                     Exit
                 </Button>
-            </p>
+            </p> */}
 
 
       </>

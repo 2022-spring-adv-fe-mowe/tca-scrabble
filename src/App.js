@@ -4,9 +4,8 @@ import { Home } from './Home';
 // import { PlayGame } from './PlayGame';
 // import { Waiting } from './Waiting';
 import { ScorePage } from './scorePage';
-// import { SpecialSquare } from './SpecialSquare';
-// import { Win } from './Win';
-// import { Lose } from './Lose';
+import { Win } from './Win';
+import { Lose } from './Lose';
 import { useEffect, useState } from 'react';
 import localforage from 'localforage';
 // import { createTheme } from '@mui/system/styles';
@@ -108,9 +107,9 @@ const App = () => {
             updateScore={updateScore}
             updateLeftOverScore={updateLeftOverScore}
           />} />
-        {/* <Route path="SpecialSquare" element={<SpecialSquare />} />
+        {/* <Route path="SpecialSquare" element={<SpecialSquare />} /> */}
         <Route path="win" element={<Win />} />
-        <Route path="lose" element={<Lose />} /> */}
+        <Route path="lose" element={<Lose />} />
       </Routes>
     </div>
     </>

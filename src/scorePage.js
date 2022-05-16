@@ -29,7 +29,7 @@ export const ScorePage = ({
             , score: totalScore
         });
         updateScore();
-         nav("/");
+         nav("/Win");
     };
 
     const endGameLose = () => {
@@ -40,7 +40,7 @@ export const ScorePage = ({
             , score: totalScore
         });
         updateScore();
-         nav("/");
+         nav("/lose");
     };
 
 
@@ -63,7 +63,6 @@ export const ScorePage = ({
                 placeholder="your score"
                 id="leftOver"
                 type="number"
-                min="0"
                 required="yes"
                 value={scoreForEditing}
                 onChange={(e) =>
@@ -80,14 +79,14 @@ export const ScorePage = ({
             -
             <h2>
             </h2>
-            {/* <p>Letters left over</p> */}
+
             <h2>
             <TextField
                 label="Letters left over"
                 placeholder="letters left over score"
                 id="leftOver"
                 type="number"
-                min="0"
+                // min="0"
                 required="yes"
                 value={leftOverScoreForEditing}
                 onChange={(e) =>
