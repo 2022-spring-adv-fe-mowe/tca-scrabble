@@ -82,8 +82,8 @@ export const ScorePage = ({
 
             <h2>
             <TextField
-                label="Letters left over"
-                placeholder="letters left over score"
+                label="Score of Letters left over"
+                placeholder="score of letters left over score"
                 id="leftOver"
                 type="number"
                 // min="0"
