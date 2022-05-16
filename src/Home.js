@@ -14,6 +14,8 @@ const findMinWord = (results) => (
     )
 );
 
+
+
 export const Home = ({
     gameResults
     ,setCurrentGame
@@ -34,15 +36,9 @@ export const Home = ({
     const win = gameResults.filter(n => n.winner).length;
 
     const topWord = findTopWord(gameResults);
-
-    // const topWord = 0;
-
-    // if (gameResults != 0) {
-    //     topWord = findTopWord(gameResults)
-    // } 
+    const topWordDisplay = isFinite(topWord) ? topWord : 0;
  
     const minWord = findMinWord(gameResults);
-
 
     let calculateWinPercentage = ((win / gameResults.length)*100).toFixed(2);
     calculateWinPercentage = isNaN(calculateWinPercentage) ? 0 : Number(calculateWinPercentage);
@@ -77,7 +73,7 @@ export const Home = ({
                 <h3
                     
                 >
-                    Top score: {topWord}
+                    Top score: {topWordDisplay}
                 </h3>
                 <h3>
                     Lowest score: {minWord}
